@@ -40,3 +40,17 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+    staging:
+      +schema: staging
+      +materialized: table
+    datamart:
+      +schema: mart
+      +materialized: table
+    materialization:
+      +schema: staging
+    refined:
+      +schema: refined
+      +materialized: table
+      
+seeds:
+    +schema: staging

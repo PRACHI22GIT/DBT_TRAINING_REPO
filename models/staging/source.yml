@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: DBT_TRAINING_DB
+    schema: DBT_RAW
+    tables:
+      - name: WEATHER_INFO
+      - name: SALES_DATA

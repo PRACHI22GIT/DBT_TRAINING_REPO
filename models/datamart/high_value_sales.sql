@@ -1,0 +1,1 @@
+select * from {{ref('sales')}} where TOT_AMOUNT > 50000
